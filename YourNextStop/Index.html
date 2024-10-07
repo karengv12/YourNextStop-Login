@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/LogoYourNextStop.jpg" type="image/x-icon">
+    <title> Iniciar sesión</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <script src="script.js" defer></script> 
+</head>
+<body>
+    
+
+    <div class="login-container">
+        <div class="logo">
+            <img src="images/LogoYourNextStop.jpg" alt="Logo Your NextStop">
+        </div>
+
+        <form id="login-form" action="/login" method="POST">
+            <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
+            <input type="password" id="password" name="password" placeholder="Contraseña" required>
+            <div id="error-message" style="color: red; margin: 10px 0;"></div>
+            <input type="checkbox" id="remember-me"> <label for="remember-me">Recuérdame</label>
+            <button type="submit" class="btn">Iniciar sesión</button>
+        </form>
+
+        <div class="forgot-password">
+            <a href="#" onclick="alert('Funcionalidad de recuperación de contraseña aún no implementada.');">¿Olvidaste tu contraseña?</a>
+        </div>
+
+        <div class="signup">
+            ¿No tienes una cuenta? <a href="#">Regístrate aquí</a>
+        </div>
+
+        <footer>© 2024 YourNextStop. Todos los derechos reservados.</footer>
+    </div>
+
+</body>
+</html>
